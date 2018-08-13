@@ -30,17 +30,6 @@ public class Player2Controller : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-        Debug.Log("Collision Detected");
-        if (coll.gameObject.tag == "wallTop")
-        {
-            state = playerState.wallContactTop;
-        }
-        else if (coll.gameObject.tag == "wallBottom")
-        {
-            state = playerState.wallContactBottom;
-        }
-    }
+
 
 }

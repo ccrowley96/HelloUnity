@@ -29,17 +29,4 @@ public class Player1Controller : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 10f));
         }
     }
-
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-        Debug.Log("Collision Detected");
-        if (coll.gameObject.tag == "wallTop")
-        {
-            state = playerState.wallContactTop;
-        } else if(coll.gameObject.tag == "wallBottom")
-        {
-            state = playerState.wallContactBottom;
-        }
-    }
-
 }
